@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "WorkSansBold";
+  src: url("assets/fonts/WorkSans-Bold.ttf");
+}
+@font-face {
+  font-family: "WorkSansExtraBold";
+  src: url("assets/fonts/WorkSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "WorkSansLight";
+  src: url("assets/fonts/WorkSans-Light.ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("assets/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-Regular.ttf");
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  html,
+  body {
+    width: 210mm;
+    height: 295mm;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: WorkSans;
+  font-size: 30px;
+  --background-secondary: #fccfb1;
+  --text-secondary: #f39b87;
+  --general-padding: 2rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: calc(var(--general-padding) * 1.5);
+}
+
+.header img {
+  height: 4rem;
+}
+
+.info {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--background-secondary);
+  padding: var(--general-padding);
+}
+
+.info h1 {
+  font-family: WorkSansExtraBold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.number {
+  font-family: WorkSansBold;
+  font-size: 8rem;
+  color: var(--text-secondary);
+  background-color: #fff;
+  padding: 0.2rem 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.info-bottom {
+  display: flex;
+  gap: 1rem;
+}
+
+.info hr {
+  width: auto;
+  border: 1px solid #fff;
+}
+
+.remember {
+  box-sizing: border-box;
+  padding: var(--general-padding);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  font-family: Inter;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: var(--general-padding);
+  box-sizing: border-box;
+}
+
+.footer img {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.footer a {
+  font-size: 1rem;
+}
